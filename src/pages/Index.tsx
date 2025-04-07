@@ -17,7 +17,6 @@ const Index = () => {
   const [name, setName] = useState("");
   const [agreeToTerms, setAgreeToTerms] = useState(false);
 
-  // Program highlights data
   const highlights = [
     {
       icon: "💰",
@@ -25,7 +24,7 @@ const Index = () => {
       description: "100% tuition-contingent: No payment for Agile-German speakers"
     },
     {
-      icon: <TrendingUp size={24} />,
+      icon: "/lovable-uploads/e9efe02c-f4f1-4763-9354-94cbe94948f8.png",
       title: "Career Transformation",
       description: "From any background to in-demand tech careers"
     },
@@ -36,7 +35,6 @@ const Index = () => {
     }
   ];
 
-  // Statistics data
   const stats = [
     {
       percent: "85%",
@@ -55,7 +53,6 @@ const Index = () => {
     }
   ];
 
-  // Testimonial data
   const testimonials = [
     {
       name: "Patricia Seda",
@@ -71,7 +68,6 @@ const Index = () => {
     }
   ];
 
-  // Career paths
   const careerPaths = [
     {
       icon: "📊",
@@ -91,7 +87,6 @@ const Index = () => {
     }
   ];
 
-  // Application steps
   const applicationSteps = [
     {
       number: 1,
@@ -115,22 +110,18 @@ const Index = () => {
     }
   ];
 
-  // Company logos
   const companies = ["Deloitte", "Intel", "eBay", "NVIDIA", "Microsoft", "Meta"];
 
   return (
     <div className="flex flex-col min-h-screen bg-sand">
-      {/* Header */}
       <header className="w-full py-6 bg-sand">
         <div className="container mx-auto px-4">
           <Logo />
         </div>
       </header>
 
-      {/* Hero Section */}
       <section className="w-full py-8 bg-sand">
         <div className="container mx-auto px-4 text-center max-w-3xl">
-          {/* User avatars and ratings */}
           <div className="flex justify-center mb-4">
             <div className="flex -space-x-2">
               <div className="w-8 h-8 rounded-full overflow-hidden border-2 border-white">
@@ -164,7 +155,6 @@ const Index = () => {
             Join one of our long-term career training programs and receive €500 as a welcome reward.
           </p>
 
-          {/* Form */}
           <div className="max-w-md mx-auto">
             <div className="flex flex-col md:flex-row gap-4 mb-4">
               <Input 
@@ -202,7 +192,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Company Logos */}
       <section className="w-full py-8 bg-sand">
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
@@ -214,7 +203,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Program Highlights */}
       <section className="w-full py-12 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-2xl font-bold text-center mb-12">Program highlights</h2>
@@ -232,7 +220,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Statistics */}
       <section className="w-full py-16 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-2xl font-bold text-center mb-12">Our numbers</h2>
@@ -250,7 +237,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Testimonials */}
       <section className="w-full py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-2xl font-bold text-center mb-12">What are graduates are saying</h2>
@@ -269,7 +255,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Career Paths */}
       <section className="w-full py-16 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-2xl font-bold text-center mb-4">Choose your path to success</h2>
@@ -283,7 +268,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Application Process */}
       <section className="w-full py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-2xl font-bold text-center mb-12">Simple application process</h2>
@@ -301,7 +285,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="w-full py-8 bg-black text-white">
         <div className="container mx-auto px-4">
           <div className="mb-6">
