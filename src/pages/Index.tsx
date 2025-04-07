@@ -1,12 +1,314 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Checkbox } from "@/components/ui/checkbox";
+import { 
+  Card,
+  CardContent
+} from "@/components/ui/card";
+import Logo from "@/components/Logo";
+import TestimonialCard from "@/components/TestimonialCard";
+import ProgramHighlight from "@/components/ProgramHighlight";
+import StatCard from "@/components/StatCard";
+import CareerPath from "@/components/CareerPath";
+import ApplicationStep from "@/components/ApplicationStep";
+import CompanyLogo from "@/components/CompanyLogo";
 
 const Index = () => {
+  const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
+  const [agreeToTerms, setAgreeToTerms] = useState(false);
+
+  // Program highlights data
+  const highlights = [
+    {
+      icon: "💰",
+      title: "Zero Upfront Cost",
+      description: "100% tuition-contingent: No payment for Agile-German speakers"
+    },
+    {
+      icon: "🚀",
+      title: "Career Transformation",
+      description: "From any background to in-demand tech careers"
+    },
+    {
+      icon: "📈",
+      title: "Success-Focused",
+      description: "Outcomes-oriented for job-market readiness"
+    }
+  ];
+
+  // Statistics data
+  const stats = [
+    {
+      percent: "85%",
+      title: "Placement Rate",
+      description: "Graduates find jobs within one year"
+    },
+    {
+      percent: "97%",
+      title: "Retention Rate",
+      description: "Students successfully complete the program"
+    },
+    {
+      percent: "98%",
+      title: "Satisfaction Rate",
+      description: "Students report being very satisfied"
+    }
+  ];
+
+  // Testimonial data
+  const testimonials = [
+    {
+      name: "Patricia Seda",
+      role: "Junior Data Analyst, Knyt",
+      quote: "Taking the leap was life-changing, never imagined I would be working in tech so quickly. Forever thankful to Masterschool and the wonderful support I received.",
+      stars: 5
+    },
+    {
+      name: "Amanda Alfaro",
+      role: "Business Intelligence Analyst, Deloitte",
+      quote: "Switching careers felt less scary with Masterschool. It gave me the technical skills employers wanted and the mindset skills I didn't know I needed.",
+      stars: 5
+    }
+  ];
+
+  // Career paths
+  const careerPaths = [
+    {
+      icon: "📊",
+      title: "Data Analytics",
+    },
+    {
+      icon: "🔐",
+      title: "Cybersecurity",
+    },
+    {
+      icon: "💻",
+      title: "Web Development",
+    },
+    {
+      icon: "📱",
+      title: "Digital Marketing",
+    }
+  ];
+
+  // Application steps
+  const applicationSteps = [
+    {
+      number: 1,
+      title: "Check eligibility",
+      description: "Complete our quick eligibility form"
+    },
+    {
+      number: 2,
+      title: "Speak with us",
+      description: "Talk to our career counselors"
+    },
+    {
+      number: 3,
+      title: "Begin learning",
+      description: "Start your studies and master your career"
+    },
+    {
+      number: 4,
+      title: "Land your role",
+      description: "Get hired with our placement support"
+    }
+  ];
+
+  // Company logos
+  const companies = ["Deloitte", "Intel", "eBay", "NVIDIA", "Microsoft", "Meta"];
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+    <div className="flex flex-col min-h-screen bg-white">
+      {/* Header */}
+      <header className="w-full py-6 bg-white">
+        <div className="container mx-auto px-4">
+          <Logo />
+        </div>
+      </header>
+
+      {/* Hero Section */}
+      <section className="w-full py-8 bg-white">
+        <div className="container mx-auto px-4 text-center max-w-3xl">
+          {/* User avatars and ratings */}
+          <div className="flex justify-center mb-4">
+            <div className="flex -space-x-2">
+              <div className="w-8 h-8 rounded-full overflow-hidden border-2 border-white">
+                <div className="w-full h-full bg-gray-300 rounded-full"></div>
+              </div>
+              <div className="w-8 h-8 rounded-full overflow-hidden border-2 border-white">
+                <div className="w-full h-full bg-gray-400 rounded-full"></div>
+              </div>
+              <div className="w-8 h-8 rounded-full overflow-hidden border-2 border-white">
+                <div className="w-full h-full bg-gray-500 rounded-full"></div>
+              </div>
+            </div>
+            <div className="ml-2 flex items-center">
+              <div className="text-sm text-green-600">★★★★★</div>
+              <span className="text-xs text-gray-500 ml-1">(4.9/5)</span>
+            </div>
+          </div>
+          
+          <h1 className="text-4xl font-bold mb-4 text-gray-800">
+            You've been gifted €500 to<br />start your tech journey
+          </h1>
+          
+          <p className="text-gray-600 mb-8">
+            Join one of our long-term career training programs and receive €500 as a welcome reward.
+          </p>
+
+          {/* Form */}
+          <div className="max-w-md mx-auto">
+            <div className="flex flex-col md:flex-row gap-4 mb-4">
+              <Input 
+                type="text" 
+                placeholder="Name*" 
+                value={name} 
+                onChange={(e) => setName(e.target.value)} 
+                className="flex-1"
+              />
+              <Input 
+                type="email" 
+                placeholder="Email*" 
+                value={email} 
+                onChange={(e) => setEmail(e.target.value)} 
+                className="flex-1"
+              />
+            </div>
+
+            <Button className="w-full bg-green-400 hover:bg-green-500 text-black mb-4">
+              Check if you qualify
+              <span className="ml-2">→</span>
+            </Button>
+
+            <div className="flex items-center justify-center space-x-2">
+              <Checkbox 
+                id="terms" 
+                checked={agreeToTerms} 
+                onCheckedChange={(checked) => setAgreeToTerms(checked as boolean)} 
+              />
+              <label htmlFor="terms" className="text-sm text-gray-500">
+                I agree to <a href="#" className="underline">Terms & Conditions</a>
+              </label>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Company Logos */}
+      <section className="w-full py-8 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
+            {companies.map((company, index) => (
+              <CompanyLogo key={index} name={company} />
+            ))}
+          </div>
+          <p className="text-center text-gray-500 mt-4 text-sm">The world's leading companies hire our graduates</p>
+        </div>
+      </section>
+
+      {/* Program Highlights */}
+      <section className="w-full py-12 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-2xl font-bold text-center mb-12">Program highlights</h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {highlights.map((highlight, index) => (
+              <ProgramHighlight 
+                key={index} 
+                icon={highlight.icon} 
+                title={highlight.title} 
+                description={highlight.description} 
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Statistics */}
+      <section className="w-full py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-2xl font-bold text-center mb-12">Our numbers</h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {stats.map((stat, index) => (
+              <StatCard 
+                key={index} 
+                percentage={stat.percent} 
+                title={stat.title} 
+                description={stat.description} 
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="w-full py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-2xl font-bold text-center mb-12">What are graduates are saying</h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {testimonials.map((testimonial, index) => (
+              <TestimonialCard 
+                key={index} 
+                name={testimonial.name} 
+                role={testimonial.role} 
+                quote={testimonial.quote} 
+                stars={testimonial.stars} 
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Career Paths */}
+      <section className="w-full py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-2xl font-bold text-center mb-4">Choose your path to success</h2>
+          <p className="text-center text-gray-600 mb-12">8,945 people exploring paths across 6 careers</p>
+          
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            {careerPaths.map((path, index) => (
+              <CareerPath key={index} icon={path.icon} title={path.title} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Application Process */}
+      <section className="w-full py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-2xl font-bold text-center mb-12">Simple application process</h2>
+          
+          <div className="max-w-2xl mx-auto">
+            {applicationSteps.map((step, index) => (
+              <ApplicationStep 
+                key={index} 
+                number={step.number} 
+                title={step.title} 
+                description={step.description} 
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="w-full py-8 bg-black text-white">
+        <div className="container mx-auto px-4">
+          <div className="mb-6">
+            <Logo white />
+          </div>
+          <div className="text-sm text-gray-400">
+            <p>Masterschool • Mission St, (UTC-5)am</p>
+            <p>© 2023 Masterschool. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
