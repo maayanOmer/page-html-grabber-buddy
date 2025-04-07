@@ -1,12 +1,8 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Checkbox } from "@/components/ui/checkbox";
-import { 
-  Card,
-  CardContent
-} from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import Logo from "@/components/Logo";
 import TestimonialCard from "@/components/TestimonialCard";
 import ProgramHighlight from "@/components/ProgramHighlight";
@@ -122,16 +118,16 @@ const Index = () => {
   const companies = ["Deloitte", "Intel", "eBay", "NVIDIA", "Microsoft", "Meta"];
 
   return (
-    <div className="flex flex-col min-h-screen bg-white">
+    <div className="flex flex-col min-h-screen bg-sand">
       {/* Header */}
-      <header className="w-full py-6 bg-white">
+      <header className="w-full py-6 bg-sand">
         <div className="container mx-auto px-4">
           <Logo />
         </div>
       </header>
 
       {/* Hero Section */}
-      <section className="w-full py-8 bg-white">
+      <section className="w-full py-8 bg-sand">
         <div className="container mx-auto px-4 text-center max-w-3xl">
           {/* User avatars and ratings */}
           <div className="flex justify-center mb-4">
@@ -179,7 +175,7 @@ const Index = () => {
               />
             </div>
 
-            <Button className="w-full bg-green-400 hover:bg-green-500 text-black mb-4">
+            <Button className="w-full bg-primary hover:bg-primary/90 text-black mb-4">
               Check if you qualify
               <span className="ml-2">→</span>
             </Button>
@@ -199,7 +195,7 @@ const Index = () => {
       </section>
 
       {/* Company Logos */}
-      <section className="w-full py-8 bg-white">
+      <section className="w-full py-8 bg-sand">
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
             {companies.map((company, index) => (
