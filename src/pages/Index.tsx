@@ -10,6 +10,7 @@ import StatCard from "@/components/StatCard";
 import CareerPath from "@/components/CareerPath";
 import ApplicationStep from "@/components/ApplicationStep";
 import CompanyLogo from "@/components/CompanyLogo";
+import { TrendingUp } from "lucide-react";
 
 const Index = () => {
   const [email, setEmail] = useState("");
@@ -24,7 +25,7 @@ const Index = () => {
       description: "100% tuition-contingent: No payment for Agile-German speakers"
     },
     {
-      icon: "🚀",
+      icon: <TrendingUp size={24} />,
       title: "Career Transformation",
       description: "From any background to in-demand tech careers"
     },
