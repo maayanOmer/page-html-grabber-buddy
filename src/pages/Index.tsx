@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Checkbox } from "@/components/ui/checkbox";
@@ -143,8 +143,15 @@ const Index = () => {
               </div>
             </div>
             <div className="ml-2 flex items-center">
-              <div className="text-sm text-green-600">★★★★★</div>
-              <span className="text-xs text-gray-500 ml-1">(4.9/5)</span>
+              <a 
+                href="https://www.trustpilot.com/review/masterschool.com" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="flex items-center hover:opacity-80 transition-opacity"
+              >
+                <div className="text-sm text-green-600">★★★★½</div>
+                <span className="text-xs text-gray-500 ml-1">(4.8/5)</span>
+              </a>
             </div>
           </div>
           
