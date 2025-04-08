@@ -29,7 +29,7 @@ const Index = () => {
       description: "From any background to in-demand tech careers"
     },
     {
-      icon: "📈",
+      icon: "/lovable-uploads/a6439422-b96a-420e-b721-bf4d8c93ddd9.png",
       title: "Success-Focused",
       description: "Outcomes-oriented for job-market readiness"
     }
