@@ -278,7 +278,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="w-full py-12 bg-gray-50">
+      <section className="w-full py-16 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-2xl font-bold text-center mb-12">
             Program highlights
@@ -339,7 +339,7 @@ const Index = () => {
           <h2 className="text-2xl font-bold text-center mb-12">
             Choose your path to success
           </h2>
-          <p className="text-center text-gray-600 mb-12">
+          <p className="text-center text-gray-600 mb-12 tracking-wide">
             8-14 months intensive training with industry experts
           </p>
 

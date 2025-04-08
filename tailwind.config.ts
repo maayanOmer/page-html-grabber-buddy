@@ -19,16 +19,14 @@ export default {
     },
     extend: {
       colors: {
-        // Existing colors
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         
-        // New custom colors
         primary: {
-          DEFAULT: "#9EFF8A", // CTA and starts color
+          DEFAULT: "#9EFF8A", // Updated CTA and starts color
           foreground: "#000000", // Black text for contrast
         },
         sand: {
@@ -36,7 +34,6 @@ export default {
           foreground: "#333333", // Dark gray for text
         },
         
-        // Keep existing color variants
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
