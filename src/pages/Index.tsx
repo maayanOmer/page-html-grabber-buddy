@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -85,6 +84,8 @@ const Index = () => {
     {
       icon: "💻",
       title: "Web Development",
+      iconBgColor: "#E4DCF7",
+      iconSize: { width: 56, height: 56 }
     },
     {
       icon: "📱",
@@ -96,22 +97,26 @@ const Index = () => {
     {
       number: 1,
       title: "Check eligibility",
-      description: "Complete our quick eligibility form"
+      description: "Complete our quick eligibility form",
+      circleColor: "#E4DCF7"
     },
     {
       number: 2,
       title: "Speak with us",
-      description: "Talk to our career counselors"
+      description: "Talk to our career counselors",
+      circleColor: "#E4DCF7"
     },
     {
       number: 3,
       title: "Begin learning",
-      description: "Start your studies and master your career"
+      description: "Start your studies and master your career",
+      circleColor: "#E4DCF7"
     },
     {
       number: 4,
       title: "Land your role",
-      description: "Get hired with our placement support"
+      description: "Get hired with our placement support",
+      circleColor: "#E4DCF7"
     }
   ];
 
@@ -290,6 +295,7 @@ const Index = () => {
                 number={step.number} 
                 title={step.title} 
                 description={step.description} 
+                circleColor={step.circleColor}
               />
             ))}
           </div>
