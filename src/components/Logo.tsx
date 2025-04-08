@@ -8,8 +8,11 @@ interface LogoProps {
 const Logo: React.FC<LogoProps> = ({ white = false }) => {
   return (
     <div className="flex items-center">
-      <span className={`mr-2 ${white ? "text-white" : "text-black"}`}>🎓</span>
-      <span className={`font-bold text-lg ${white ? "text-white" : "text-black"}`}>Masterschool</span>
+      <img 
+        src="/lovable-uploads/ca8ab1ed-b46e-47e4-9bfc-04bc74584948.png" 
+        alt="Masterschool Logo" 
+        className={`h-6 ${white ? "filter brightness-0 invert" : ""}`} 
+      />
     </div>
   );
 };
