@@ -236,26 +236,7 @@ const Index = () => {
 
       <section className="w-full py-16 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-2xl font-bold text-center mb-4">Choose your path to success</h2>
-          <p className="text-center text-gray-600 mb-12">8-14 months intensive training with industry experts</p>
-          
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {careerPaths.map((path, index) => (
-              <CareerPath 
-                key={index} 
-                icon={path.icon} 
-                title={path.title} 
-                iconBgColor={path.iconBgColor} 
-                iconSize={path.iconSize}
-              />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="w-full py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <h2 className="text-2xl font-bold text-center mb-12">Our numbers</h2>
+          <h2 className="text-2xl font-bold text-center mb-4">Our numbers</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {stats.map((stat, index) => (
@@ -282,6 +263,25 @@ const Index = () => {
                 role={testimonial.role} 
                 quote={testimonial.quote} 
                 stars={testimonial.stars} 
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="w-full py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-2xl font-bold text-center mb-12">Choose your path to success</h2>
+          <p className="text-center text-gray-600 mb-12">8-14 months intensive training with industry experts</p>
+          
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            {careerPaths.map((path, index) => (
+              <CareerPath 
+                key={index} 
+                icon={path.icon} 
+                title={path.title} 
+                iconBgColor={path.iconBgColor} 
+                iconSize={path.iconSize}
               />
             ))}
           </div>
