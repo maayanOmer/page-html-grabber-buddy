@@ -61,7 +61,7 @@ const Index = () => {
       stars: 5
     },
     {
-      name: "Amanda Alfaro",
+      name: "Antonija Mohar",
       role: "Business Intelligence Analyst, Deloitte",
       quote: "Switching careers felt less scary with Masterschool. It gave me the technical skills employers wanted and the mindset skills I didn't know I needed.",
       stars: 5
