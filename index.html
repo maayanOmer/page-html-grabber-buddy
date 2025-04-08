@@ -4,42 +4,444 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>page-html-grabber-buddy</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
+    <title>Masterschool</title>
+    <meta name="description" content="Masterschool Career Training Programs" />
+    <meta name="author" content="Masterschool" />
 
-    <meta property="og:title" content="page-html-grabber-buddy" />
-    <meta property="og:description" content="Lovable Generated Project" />
+    <meta property="og:title" content="Masterschool" />
+    <meta property="og:description" content="Career Training Programs" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
+    <meta name="twitter:site" content="@masterschool" />
     <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    
+    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+    
+    <!-- Tailwind CDN - for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <style>
-      @font-face {
-        font-family: 'Founders Grotesk';
-        src: url('/path/to/FoundersGrotesk-Regular.woff2') format('woff2'),
-             url('/path/to/FoundersGrotesk-Regular.woff') format('woff');
-        font-weight: 400;
-        font-style: normal;
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       }
-      @font-face {
-        font-family: 'Founders Grotesk';
-        src: url('/path/to/FoundersGrotesk-Bold.woff2') format('woff2'),
-             url('/path/to/FoundersGrotesk-Bold.woff') format('woff');
-        font-weight: 700;
-        font-style: normal;
+      
+      /* Custom styles */
+      .bg-primary {
+        background-color: #FFDB58;
+      }
+      
+      .bg-sand {
+        background-color: #F9F7F5;
+      }
+      
+      .career-path-icon {
+        width: 56px;
+        height: 56px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0.75rem;
+        border-radius: 9999px;
+      }
+      
+      .career-path-icon img {
+        max-width: 70%;
+        max-height: 70%;
+        object-fit: contain;
+      }
+      
+      .application-step-circle {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 9999px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 1rem;
+        flex-shrink: 0;
+        font-weight: bold;
       }
     </style>
   </head>
 
-  <body>
-    <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="/src/main.tsx"></script>
+  <body class="flex flex-col min-h-screen bg-sand">
+    <!-- Header -->
+    <header class="w-full py-6 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="flex items-center">
+          <img 
+            src="/lovable-uploads/ca8ab1ed-b46e-47e4-9bfc-04bc74584948.png" 
+            alt="Masterschool Logo" 
+            class="h-6" 
+          />
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="w-full py-8 bg-white">
+      <div class="container mx-auto px-4 text-center max-w-3xl">
+        <div class="flex justify-center mb-4">
+          <div class="flex -space-x-2">
+            <div class="relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full">
+              <img src="../../public/avatar-images/Ellipse 1.webp" alt="Student" class="aspect-square h-full w-full" />
+            </div>
+            <div class="relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full">
+              <img src="../../public/avatar-images/Ellipse 2.webp" alt="Student" class="aspect-square h-full w-full" />
+            </div>
+            <div class="relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full">
+              <img src="../../public/avatar-images/Ellipse 3.webp" alt="Student" class="aspect-square h-full w-full" />
+            </div>
+          </div>
+          <div class="ml-2 flex flex-col items-start">
+            <a
+              href="../../public/avatar-images/ellipse 1.webp"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex flex-col items-center hover:opacity-80 transition-opacity"
+            >
+              <div>
+                <div class="text-sm text-green-600 flex items-center">
+                  ★★★★★
+                  <span class="ml-2 text-gray-500 font-light text-xs">
+                    4.8 / 5
+                  </span>
+                </div>
+              </div>
+              <span class="text-xs text-gray-400">
+                500+ Trustpilot reviews
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <h1 class="text-4xl font-bold mb-4 text-gray-800">
+          You've been gifted €500 to
+          <br />
+          start your tech journey
+        </h1>
+
+        <p class="text-gray-600 mb-8">
+          Join one of our long-term career training programs and receive €500
+          as a welcome reward.
+        </p>
+
+        <div class="max-w-md mx-auto">
+          <div class="flex flex-col md:flex-row gap-4 mb-4">
+            <input
+              type="text"
+              placeholder="Name*"
+              class="flex-1 h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm"
+            />
+            <input
+              type="email"
+              placeholder="Email*"
+              class="flex-1 h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm"
+            />
+          </div>
+
+          <button class="w-full bg-primary hover:bg-primary/90 text-black mb-4 inline-flex items-center justify-center rounded-md text-sm font-medium h-10 px-4 py-2">
+            Check if you qualify
+            <span class="ml-2">→</span>
+          </button>
+
+          <div class="flex items-center justify-center space-x-2">
+            <input type="checkbox" id="terms" class="h-4 w-4 shrink-0 rounded-sm border border-primary" />
+            <label for="terms" class="text-xs text-gray-500">
+              I agree to
+              <a href="#" class="underline">
+                Terms & Conditions
+              </a>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mx-auto px-4 mt-12 pt-8 border-t border-gray-100">
+        <div class="flex flex-wrap justify-center items-center gap-8 md:gap-12">
+          <div class="opacity-60 hover:opacity-100 transition-opacity">
+            <img 
+              src="/lovable-uploads/a94219ff-9bbd-4646-b0d9-8f4d8fc2bf56.png" 
+              alt="Deloitte logo" 
+              class="h-8 w-auto object-contain"
+            />
+          </div>
+          <div class="opacity-60 hover:opacity-100 transition-opacity">
+            <img 
+              src="/lovable-uploads/1d5b7c98-d329-4928-a5d4-d600d760ad98.png" 
+              alt="Intel logo" 
+              class="h-8 w-auto object-contain"
+            />
+          </div>
+          <div class="opacity-60 hover:opacity-100 transition-opacity">
+            <img 
+              src="/lovable-uploads/ce8fe417-e19c-4477-b637-78555fd6680b.png" 
+              alt="eBay logo" 
+              class="h-8 w-auto object-contain"
+            />
+          </div>
+          <div class="opacity-60 hover:opacity-100 transition-opacity">
+            <img 
+              src="/lovable-uploads/84bea954-8202-4c86-a785-47967d24b545.png" 
+              alt="NVIDIA logo" 
+              class="h-8 w-auto object-contain"
+            />
+          </div>
+          <div class="opacity-60 hover:opacity-100 transition-opacity">
+            <img 
+              src="/lovable-uploads/4dc01572-1e8b-4ea7-9592-d277fcc989cf.png" 
+              alt="Microsoft logo" 
+              class="h-8 w-auto object-contain"
+            />
+          </div>
+          <div class="opacity-60 hover:opacity-100 transition-opacity">
+            <img 
+              src="/lovable-uploads/e5ea8f22-deae-478d-97c8-877c2ae8ebf6.png" 
+              alt="Meta logo" 
+              class="h-8 w-auto object-contain"
+            />
+          </div>
+        </div>
+        <p class="text-center text-xs font-light text-gray-500 mt-4">
+          The world's leading companies hire our graduates
+        </p>
+      </div>
+    </section>
+
+    <!-- Program Highlights Section -->
+    <section class="w-full py-12 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-2xl font-bold text-center mb-12">
+          Program highlights
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="flex flex-col items-center text-center">
+            <div class="mb-4">
+              <img src="/lovable-uploads/51f9eca3-6474-47b2-9f17-99c136093f28.png" alt="Zero Upfront Cost" class="w-12 h-12 object-contain" />
+            </div>
+            <h3 class="font-bold text-lg mb-2">Zero Upfront Cost</h3>
+            <p class="text-gray-600 text-sm">100% tuition covered by Bildungsgutschein for eligible German residents</p>
+          </div>
+          
+          <div class="flex flex-col items-center text-center">
+            <div class="mb-4">
+              <img src="/lovable-uploads/e9efe02c-f4f1-4763-9354-94cbe94948f8.png" alt="Career Transformation" class="w-12 h-12 object-contain" />
+            </div>
+            <h3 class="font-bold text-lg mb-2">Career Transformation</h3>
+            <p class="text-gray-600 text-sm">From any background to in-demand tech careers</p>
+          </div>
+          
+          <div class="flex flex-col items-center text-center">
+            <div class="mb-4">
+              <img src="/lovable-uploads/a6439422-b96a-420e-b721-bf4d8c93ddd9.png" alt="Success-Focused" class="w-12 h-12 object-contain" />
+            </div>
+            <h3 class="font-bold text-lg mb-2">Success-Focused</h3>
+            <p class="text-gray-600 text-sm">Curriculum designed for job market readiness</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="w-full py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-2xl font-bold text-center mb-4">Our numbers</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="flex flex-col items-center text-center">
+            <h3 class="text-4xl font-bold mb-2">85%</h3>
+            <p class="font-semibold text-lg mb-1">Placement Rate</p>
+            <p class="text-gray-600 text-sm">Graduates find jobs within one year</p>
+          </div>
+          
+          <div class="flex flex-col items-center text-center">
+            <h3 class="text-4xl font-bold mb-2">97%</h3>
+            <p class="font-semibold text-lg mb-1">Retention Rate</p>
+            <p class="text-gray-600 text-sm">Students successfully complete the program</p>
+          </div>
+          
+          <div class="flex flex-col items-center text-center">
+            <h3 class="text-4xl font-bold mb-2">98%</h3>
+            <p class="font-semibold text-lg mb-1">Satisfaction Rate</p>
+            <p class="text-gray-600 text-sm">Students report being very satisfied</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="w-full py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-2xl font-bold text-center mb-12">
+          What are graduates are saying
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="rounded-lg border bg-gray-100 border-0 shadow-sm">
+            <div class="p-6">
+              <div class="mb-4">
+                <p class="text-gray-700 italic mb-4">"Taking the leap was life-changing, never imagined I would be working in tech so quickly. Forever thankful to Masterschool and the wonderful support I received."</p>
+                <div class="text-yellow-400">
+                  ★★★★★
+                </div>
+              </div>
+              <div>
+                <p class="font-semibold">Patricia Seda</p>
+                <p class="text-sm text-gray-600">Junior Data Analyst, Knyt</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="rounded-lg border bg-gray-100 border-0 shadow-sm">
+            <div class="p-6">
+              <div class="mb-4">
+                <p class="text-gray-700 italic mb-4">"Switching careers felt less scary with Masterschool. It gave me the technical skills employers wanted and the mindset skills I didn't know I needed."</p>
+                <div class="text-yellow-400">
+                  ★★★★★
+                </div>
+              </div>
+              <div>
+                <p class="font-semibold">Antonija Mohar</p>
+                <p class="text-sm text-gray-600">Business Intelligence Analyst, Deloitte</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Career Paths Section -->
+    <section class="w-full py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-2xl font-bold text-center mb-12">
+          Choose your path to success
+        </h2>
+        <p class="text-center text-gray-600 mb-12">
+          8-14 months intensive training with industry experts
+        </p>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div class="rounded-lg border bg-card text-card-foreground shadow-sm transition-all">
+            <div class="p-6 flex flex-col items-center text-center">
+              <div class="career-path-icon" style="background-color: #F2F2EC;">
+                <img 
+                  src="/lovable-uploads/bca7c78c-3d5d-4ce2-a101-9b103c0a2f2a.png" 
+                  alt="Data Analytics" 
+                />
+              </div>
+              <h3 class="font-medium text-sm">Data Analytics</h3>
+            </div>
+          </div>
+          
+          <div class="rounded-lg border bg-card text-card-foreground shadow-sm transition-all">
+            <div class="p-6 flex flex-col items-center text-center">
+              <div class="career-path-icon" style="background-color: #EBFFE7;">
+                <img 
+                  src="/lovable-uploads/df1481a0-282f-4a9a-aa61-1dd04289b243.png" 
+                  alt="Cybersecurity" 
+                />
+              </div>
+              <h3 class="font-medium text-sm">Cybersecurity</h3>
+            </div>
+          </div>
+          
+          <div class="rounded-lg border bg-card text-card-foreground shadow-sm transition-all">
+            <div class="p-6 flex flex-col items-center text-center">
+              <div class="career-path-icon" style="background-color: #E4DCF7;">
+                <img 
+                  src="/lovable-uploads/33409539-3e22-46c1-ab8c-5ca228670010.png" 
+                  alt="Web Development" 
+                />
+              </div>
+              <h3 class="font-medium text-sm">Web Development</h3>
+            </div>
+          </div>
+          
+          <div class="rounded-lg border bg-card text-card-foreground shadow-sm transition-all">
+            <div class="p-6 flex flex-col items-center text-center">
+              <div class="career-path-icon" style="background-color: #FFE3F7;">
+                <img 
+                  src="/lovable-uploads/9e8ee051-1d8a-49d6-a235-1b8aa9f69388.png" 
+                  alt="Digital Marketing" 
+                />
+              </div>
+              <h3 class="font-medium text-sm">Digital Marketing</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Application Process Section -->
+    <section class="w-full py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-2xl font-bold text-center mb-12">
+          Simple application process
+        </h2>
+
+        <div class="max-w-2xl w-fit mx-auto mt-12">
+          <div class="flex items-start mb-6">
+            <div class="application-step-circle" style="background-color: #E4DCF7;">1</div>
+            <div>
+              <h3 class="font-bold mb-1">Check eligibility</h3>
+              <p class="text-gray-600 text-sm">Complete our quick eligibility form</p>
+            </div>
+          </div>
+          
+          <div class="flex items-start mb-6">
+            <div class="application-step-circle" style="background-color: #E4DCF7;">2</div>
+            <div>
+              <h3 class="font-bold mb-1">Speak with us</h3>
+              <p class="text-gray-600 text-sm">Talk with our career consultants</p>
+            </div>
+          </div>
+          
+          <div class="flex items-start mb-6">
+            <div class="application-step-circle" style="background-color: #E4DCF7;">3</div>
+            <div>
+              <h3 class="font-bold mb-1">Begin learning</h3>
+              <p class="text-gray-600 text-sm">Join your cohort and start your journey</p>
+            </div>
+          </div>
+          
+          <div class="flex items-start mb-6 last:mb-0">
+            <div class="application-step-circle" style="background-color: #E4DCF7;">4</div>
+            <div>
+              <h3 class="font-bold mb-1">Land your role</h3>
+              <p class="text-gray-600 text-sm">Get hired with our placement support</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="w-full py-8 bg-black text-white">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
+          <div class="mb-6 md:mb-0">
+            <div class="flex items-center">
+              <img 
+                src="/lovable-uploads/ca8ab1ed-b46e-47e4-9bfc-04bc74584948.png" 
+                alt="Masterschool Logo" 
+                class="h-6 filter brightness-0 invert" 
+              />
+            </div>
+          </div>
+          <div class="text-sm">
+            <p class="font-light text-gray-300">
+              1% Mindspace, Münzstr. 12, 10178 Berlin
+            </p>
+            <p class="text-gray-400">
+              © 2025 Masterschool. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
-
