@@ -17,7 +17,7 @@ const ApplicationStep: React.FC<ApplicationStepProps> = ({
   return (
     <div className="flex items-start mb-6 last:mb-0">
       <div 
-        className="flex items-center justify-center w-10 h-10 rounded-full mr-4 flex-shrink-0 text-gray-800 font-bold"
+        className="flex items-center justify-center w-12 h-12 rounded-full mr-4 flex-shrink-0 text-gray-800 font-bold"
         style={{ backgroundColor: circleColor }}
       >
         {number}

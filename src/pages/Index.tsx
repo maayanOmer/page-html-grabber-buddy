@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -291,11 +290,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <h2 className="text-2xl font-bold text-center mb-12">Simple application process</h2>
           
-          <p className="text-center text-gray-600 mb-12">
-            Your journey to a tech career starts with four simple steps
-          </p>
-          
-          <div className="max-w-2xl mx-auto">
+          <div className="max-w-2xl mx-auto mt-12">
             {applicationSteps.map((step, index) => (
               <ApplicationStep 
                 key={index} 
