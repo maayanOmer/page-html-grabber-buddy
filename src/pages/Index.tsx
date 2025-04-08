@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -70,8 +71,10 @@ const Index = () => {
 
   const careerPaths = [
     {
-      icon: "📊",
+      icon: "/lovable-uploads/bca7c78c-3d5d-4ce2-a101-9b103c0a2f2a.png",
       title: "Data Analytics",
+      iconBgColor: "#F2F2EC",
+      iconSize: { width: 56, height: 56 }
     },
     {
       icon: "🔐",
@@ -262,7 +265,13 @@ const Index = () => {
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {careerPaths.map((path, index) => (
-              <CareerPath key={index} icon={path.icon} title={path.title} />
+              <CareerPath 
+                key={index} 
+                icon={path.icon} 
+                title={path.title} 
+                iconBgColor={path.iconBgColor} 
+                iconSize={path.iconSize}
+              />
             ))}
           </div>
         </div>
