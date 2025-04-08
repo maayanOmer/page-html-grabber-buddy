@@ -133,7 +133,7 @@ const Index = () => {
         </div>
       </header>
 
-      <section className="w-full py-8 bg-sand">
+      <section className="w-full py-8 bg-white">
         <div className="container mx-auto px-4 text-center max-w-3xl">
           <div className="flex justify-center mb-4">
             <div className="flex -space-x-2">
