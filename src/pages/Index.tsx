@@ -127,7 +127,7 @@ const Index = () => {
 
   return (
     <div className="flex flex-col min-h-screen bg-sand">
-      <header className="w-full py-6 bg-sand">
+      <header className="w-full py-6 bg-white">
         <div className="container mx-auto px-4">
           <Logo />
         </div>
@@ -206,10 +206,8 @@ const Index = () => {
             </div>
           </div>
         </div>
-      </section>
-
-      <section className="w-full py-8 bg-sand">
-        <div className="container mx-auto px-4">
+      
+        <div className="container mx-auto px-4 mt-12 pt-8 border-t border-gray-100">
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
             {companies.map((company, index) => (
               <CompanyLogo key={index} name={company} />
