@@ -2,13 +2,18 @@
 import React from "react";
 
 interface CompanyLogoProps {
-  name: string;
+  imageUrl: string;
+  name: string; // For alt text
 }
 
-const CompanyLogo: React.FC<CompanyLogoProps> = ({ name }) => {
+const CompanyLogo: React.FC<CompanyLogoProps> = ({ imageUrl, name }) => {
   return (
     <div className="opacity-60 hover:opacity-100 transition-opacity">
-      <span className="text-gray-400 font-light">{name}</span>
+      <img 
+        src={imageUrl} 
+        alt={`${name} logo`} 
+        className="h-8 w-auto object-contain"
+      />
     </div>
   );
 };
