@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -23,7 +22,7 @@ const Index = () => {
     {
       icon: "/lovable-uploads/51f9eca3-6474-47b2-9f17-99c136093f28.png",
       title: "Zero Upfront Cost",
-      description: "100% tuition-contingent: No payment for Agile-German speakers"
+      description: "100% tuition covered by Bildungsgutschein for eligible German residents"
     },
     {
       icon: "/lovable-uploads/e9efe02c-f4f1-4763-9354-94cbe94948f8.png",
@@ -33,7 +32,7 @@ const Index = () => {
     {
       icon: "/lovable-uploads/a6439422-b96a-420e-b721-bf4d8c93ddd9.png",
       title: "Success-Focused",
-      description: "Outcomes-oriented for job-market readiness"
+      description: "Curriculum designed for job market readiness"
     }
   ];
 
