@@ -290,15 +290,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <h2 className="text-2xl font-bold text-center mb-12">Simple application process</h2>
           
-          <div className="flex justify-center mb-12">
-            <img 
-              src="/lovable-uploads/764f5635-87ac-4332-a65a-6e6423d64791.png" 
-              alt="Application Process" 
-              className="max-w-full h-auto"
-            />
-          </div>
-
-          <div className="max-w-2xl mx-auto mt-12">
+          <div className="max-w-2xl mx-auto">
             {applicationSteps.map((step, index) => (
               <ApplicationStep 
                 key={index} 
