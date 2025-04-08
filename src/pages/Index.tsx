@@ -162,7 +162,7 @@ const Index = () => {
                   <span className="ml-2 text-gray-700 font-semibold">4.8 / 5</span>
                 </div>
               </a>
-              <span className="text-xs text-gray-400">Loved by 500+ happy learners!</span>
+              <span className="text-xs text-gray-400">500+ Trustpilot reviews</span>
             </div>
           </div>
           
