@@ -105,13 +105,13 @@ const Index = () => {
     {
       number: 2,
       title: "Speak with us",
-      description: "Talk to our career counselors",
+      description: "Talk with our career consultants",
       circleColor: "#E4DCF7"
     },
     {
       number: 3,
       title: "Begin learning",
-      description: "Start your studies and master your career",
+      description: "Join your cohort and start your journey",
       circleColor: "#E4DCF7"
     },
     {
