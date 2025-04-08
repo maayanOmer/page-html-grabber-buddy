@@ -88,8 +88,10 @@ const Index = () => {
       iconSize: { width: 56, height: 56 }
     },
     {
-      icon: "📱",
+      icon: "/lovable-uploads/photo-placeholder.png",
       title: "Digital Marketing",
+      iconBgColor: "#FFE3F7",
+      iconSize: { width: 56, height: 56 }
     }
   ];
 
