@@ -77,8 +77,10 @@ const Index = () => {
       iconSize: { width: 56, height: 56 }
     },
     {
-      icon: "🔐",
+      icon: "/lovable-uploads/df1481a0-282f-4a9a-aa61-1dd04289b243.png",
       title: "Cybersecurity",
+      iconBgColor: "#EBFFE7",
+      iconSize: { width: 56, height: 56 }
     },
     {
       icon: "💻",
