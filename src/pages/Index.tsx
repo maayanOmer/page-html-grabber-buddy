@@ -216,7 +216,7 @@ const Index = () => {
               <CompanyLogo key={index} name={company} />
             ))}
           </div>
-          <p className="text-center text-gray-500 mt-4 text-sm">The world's leading companies hire our graduates</p>
+          <p className="text-center text-xs font-light text-gray-500 mt-4">The world's leading companies hire our graduates</p>
         </div>
       </section>
 
