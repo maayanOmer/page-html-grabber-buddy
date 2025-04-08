@@ -316,7 +316,7 @@ const Index = () => {
               <Logo white />
             </div>
             <div className="text-sm">
-              <p className="font-bold">1% Mindspace, Münzstr. 12, 10178 Berlin</p>
+              <p className="font-light text-gray-300">1% Mindspace, Münzstr. 12, 10178 Berlin</p>
               <p className="text-gray-400">© 2025 Masterschool. All rights reserved.</p>
             </div>
           </div>
