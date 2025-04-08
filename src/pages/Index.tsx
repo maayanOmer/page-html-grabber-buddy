@@ -19,7 +19,7 @@ const Index = () => {
 
   const highlights = [
     {
-      icon: "💰",
+      icon: "/lovable-uploads/51f9eca3-6474-47b2-9f17-99c136093f28.png",
       title: "Zero Upfront Cost",
       description: "100% tuition-contingent: No payment for Agile-German speakers"
     },
