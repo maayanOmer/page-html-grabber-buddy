@@ -54,7 +54,7 @@ const CareerPath: React.FC<CareerPathProps> = ({
   };
 
   return (
-    <Card className="hover:shadow-md transition-all">
+    <Card className="transition-all">
       <CardContent className="p-6 flex flex-col items-center text-center">
         {renderIcon()}
         <h3 className="font-medium text-sm">{title}</h3>
