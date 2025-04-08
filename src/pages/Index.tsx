@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Card, CardContent } from "@/components/ui/card";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import Logo from "@/components/Logo";
 import TestimonialCard from "@/components/TestimonialCard";
 import ProgramHighlight from "@/components/ProgramHighlight";
@@ -137,7 +138,10 @@ const Index = () => {
           <div className="flex justify-center mb-4">
             <div className="flex -space-x-2">
               <div className="w-8 h-8 rounded-full overflow-hidden border-2 border-white">
-                <div className="w-full h-full bg-gray-300 rounded-full"></div>
+                <Avatar>
+                  <AvatarImage src="/lovable-uploads/2c573e4b-8667-4dfd-b2f2-672f039446b0.png" alt="Student" />
+                  <AvatarFallback className="bg-gray-300"></AvatarFallback>
+                </Avatar>
               </div>
               <div className="w-8 h-8 rounded-full overflow-hidden border-2 border-white">
                 <div className="w-full h-full bg-gray-400 rounded-full"></div>
@@ -146,16 +150,16 @@ const Index = () => {
                 <div className="w-full h-full bg-gray-500 rounded-full"></div>
               </div>
             </div>
-            <div className="ml-2 flex items-center">
+            <div className="ml-2 flex flex-col items-start">
               <a 
                 href="https://www.trustpilot.com/review/masterschool.com" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="flex items-center hover:opacity-80 transition-opacity"
               >
-                <div className="text-sm text-green-600">★★★★½</div>
-                <span className="text-xs text-gray-500 ml-1">(4.8/5)</span>
+                <div className="text-sm text-green-600">★★★★★</div>
               </a>
+              <span className="text-xs text-gray-400">500+ Trustpilot reviews</span>
             </div>
           </div>
           
