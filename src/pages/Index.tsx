@@ -157,7 +157,10 @@ const Index = () => {
                 rel="noopener noreferrer" 
                 className="flex items-center hover:opacity-80 transition-opacity"
               >
-                <div className="text-sm text-green-600">★★★★★</div>
+                <div className="text-sm text-green-600 flex items-center">
+                  ★★★★★ 
+                  <span className="ml-2 text-gray-700 font-semibold">4.8 / 5</span>
+                </div>
               </a>
               <span className="text-xs text-gray-400">500+ Trustpilot reviews</span>
             </div>
