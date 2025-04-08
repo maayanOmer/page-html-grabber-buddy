@@ -82,7 +82,7 @@ const Index = () => {
       iconSize: { width: 56, height: 56 }
     },
     {
-      icon: "💻",
+      icon: "/lovable-uploads/33409539-3e22-46c1-ab8c-5ca228670010.png",
       title: "Web Development",
       iconBgColor: "#E4DCF7",
       iconSize: { width: 56, height: 56 }
