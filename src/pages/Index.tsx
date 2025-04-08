@@ -203,7 +203,7 @@ const Index = () => {
                 checked={agreeToTerms} 
                 onCheckedChange={(checked) => setAgreeToTerms(checked as boolean)} 
               />
-              <label htmlFor="terms" className="text-sm text-gray-500">
+              <label htmlFor="terms" className="text-xs text-gray-500">
                 I agree to <a href="#" className="underline">Terms & Conditions</a>
               </label>
             </div>
